@@ -1,0 +1,77 @@
+.univercityMain {
+  background-color: var(--color-blue);
+  padding: 2rem 0rem;
+  color: white;
+}
+
+.univercityMain .documentShadow {
+  margin-bottom: 2rem;
+}
+.northSouth {
+  background-image: url("../../Images/universityBackgroundImage.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0rem;
+}
+
+.easwest {
+  background-image: url("../../Images/universityBackgroundImage2.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0rem;
+}
+.eastWest {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+.eastIndiaCard h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.eastIndiaCard {
+  background: #f3f4f2db;
+  padding: 1rem;
+}
+
+.eastIndiaCard ol {
+  padding: 0;
+}
+
+.eastIndiaCard ol li {
+  background: #095773; /* Background color for list items */
+  margin-bottom: 2rem;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  list-style-position: inside; /* Ensures numbers are inside the li background */
+}
+
+.eastIndiaCard ol li::marker {
+  font-weight: bold; /* Make numbers bold */
+}
+
+.viewfulllist {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.viewfulllist:hover {
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
+}
+
+@media only screen and (max-width: 768px) {
+  .universityContent {
+    line-height: 20px;
+    font-size: 16px;
+  }
+}

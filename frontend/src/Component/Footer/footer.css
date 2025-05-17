@@ -1,0 +1,99 @@
+.getInTouch {
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+}
+
+.getInTouch h2 {
+  margin: 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--color-began);
+  padding: 20px;
+}
+
+.footer h5 {
+  color: #1e3c72;
+  font-weight: bold;
+}
+
+.footer ul li a {
+  color: #1e3c72;
+  text-decoration: none;
+}
+
+.footer p {
+  color: #1e3c72;
+}
+
+/* Button Styles */
+.btn-custom {
+  background-color: #1e3c72;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-custom-light {
+  background-color: white;
+  color: #1e3c72;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 2px solid #1e3c72;
+  text-decoration: none;
+}
+
+/* Form Styles */
+/* .form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+} */
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.submit-btn {
+  background-color: #1e3c72;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: none;
+}
+
+.footerUl li a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footerUl {
+  list-style-type: none;
+  padding: 0;
+  line-height: 40px;
+}
+.footer_form {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_form {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  footer {
+    padding: 10px;
+  }
+
+  .BannerImage {
+    height: 50vh;
+  }
+}

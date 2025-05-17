@@ -1,0 +1,127 @@
+:root {
+  --light-bg: #f4fff5;
+  --dark-bg: #e6ffe6;
+  --font-size-about: 20px;
+  --primary-color: #006400; /* Adding a primary color for enhancements */
+  --secondary-color: #008000; /* Adding a secondary color for highlights */
+}
+
+.why_pursue,
+.satisfyIntellectual,
+.boostYourCareer,
+.makeDifference,
+.begin_your_phd p {
+  font-size: var(--font-size-about);
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Neutral text color */
+}
+
+.what_we_do {
+  position: relative;
+  padding: 3rem 2rem;
+}
+
+.aboutCardSection {
+  border: 1px solid #000000;
+  padding: 1rem;
+  border-radius: 2rem;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern look */
+}
+
+.aboutCardSection img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 0 auto; /* Center image */
+  display: block;
+}
+
+.aboutCardSection h4 {
+  text-align: center;
+  font-size: 28px; /* Reduced slightly for balance */
+  margin-top: 1rem;
+  color: var(--primary-color); /* Highlight text */
+}
+
+.whatwedo_color {
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 50vh;
+  width: 100%;
+  top: 44%;
+  z-index: -2;
+  left: 0;
+  right: 0;
+}
+
+.why_pursue {
+  background-color: var(--light-bg);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.satisfyIntellectual img {
+  width: 50%;
+  margin: 0 auto; /* Center image */
+}
+
+.satisfyIntellectual {
+  padding: 2rem 0;
+  background-color: var(--dark-bg);
+}
+
+.boostYourCareer {
+  background-color: var(--light-bg);
+  padding: 2rem 0;
+}
+
+.makeDifference {
+  background-color: var(--dark-bg);
+  padding: 2rem 0;
+}
+
+.begin_your_phd {
+  background-color: var(--light-bg);
+  padding: 2rem 0;
+}
+
+.begin_your_phd h2 {
+  color: var(--secondary-color); /* Highlight heading */
+  font-size: 28px;
+}
+
+.begin_your_phd img {
+  max-width: 100%; /* Ensure image scales within column */
+  height: auto;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+  .what_we_do {
+    padding: 1rem;
+  }
+
+  .what_we_do .col-md-4 {
+    margin-bottom: 1rem;
+  }
+
+  .whatwedo_color {
+    height: 100vh;
+    top: 28%;
+  }
+
+  .satisfyIntellectual img {
+    width: 70%; /* Adjust image size for smaller screens */
+  }
+
+  .aboutCardSection h4 {
+    font-size: 24px; /* Adjust text size for smaller screens */
+  }
+
+  .aboutCardSection {
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
+}

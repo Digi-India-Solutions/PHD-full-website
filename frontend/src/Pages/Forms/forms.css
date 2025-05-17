@@ -1,0 +1,19 @@
+.phd-forms{
+    max-width: 70%;
+    margin: 2rem auto;
+    border: 5px double var(--color-began);
+    padding: 1rem;
+}
+
+.phd-forms form label{
+    color: var(--color-began);
+}
+
+.form-submit-btn{
+    border: none;
+    background-color: var(--color-began);
+    border-radius: 2rem;
+    padding: 10px 10px;
+    width: 100%;
+    color: white;
+}

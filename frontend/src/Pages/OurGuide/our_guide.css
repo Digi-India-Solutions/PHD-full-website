@@ -1,0 +1,91 @@
+.guideHeading h2 {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-right: 10px solid #f48e2c;
+  border-left: 10px solid #f48e2c;
+  max-width: fit-content;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  text-align: center;
+}
+.guideHeading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.our_guide {
+  background-color: #f8f9fa;
+}
+.guideCard {
+  background: #fff;
+  border: 1px solid #ddd;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.guideCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profilePicture {
+  width: 80px;
+  height: 80px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.guideDetails p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.contactLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.our_guide {
+    background-color: #f9f9f9;
+  }
+  
+  .guideCard {
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .guideCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profilePicture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+  }
+  
+  .contactLink {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .contactLink:hover {
+    text-decoration: underline;
+  }
+  
+  @media only screen and (max-width:768px) {
+    .guideHeading {
+      margin-bottom: 1rem;
+    }
+  }

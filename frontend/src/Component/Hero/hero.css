@@ -1,0 +1,175 @@
+.homeBanner {
+  background-image: url("../../Images/banner.png");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: rgba(0, 253, 38, 0.114);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 70%;
+  margin: auto;
+  padding-top: 17rem;
+  text-align: center;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px; /* Adjust this value as needed */
+  transform: translateY(-50%);
+  color: #aaa; /* Change color if needed */
+}
+
+.heroInput {
+  padding-left: 35px; /* Adjust padding to make room for the icon */
+}
+
+
+.support {
+  background-color: var(--color-blue);
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.supportCard {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+}
+.supportCard a {
+  text-decoration: none;
+  color: var(--bs-heading-color);
+}
+
+.supportImg {
+  height: 80px;
+  width: 80px;
+}
+
+.Homeabout {
+  background-color: var(--color-lightBlue);
+  padding: 3rem;
+  color: white;
+}
+
+.spacingTop {
+  margin-top: 1rem;
+}
+
+.spacingBottom {
+  margin-bottom: 2rem;
+}
+
+.heroInput {
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem 3rem;
+}
+
+.heroSearchbar{
+  max-width: 70%;
+  margin: auto;
+}
+.univercityAbout{
+  background: #258426;
+  padding: 3rem 2rem;
+}
+
+.univercityAboutBox{
+  padding: 2rem;
+  background-color: white;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.univercityAboutBox h4{
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .univercityAboutBox{
+    padding: 1rem;
+  }
+  .heroSearchbar{
+    max-width: 100%;
+  }
+  .univercityAbout .row .col-md-4{
+    margin-bottom: 1rem;
+  }
+  .univercityAbout{
+    background: #258426;
+    padding: 1rem 0rem;
+  }
+  
+  .Homeabout {
+    padding: 1rem 0rem;
+  }
+  .heroContent h2{
+    font-size: 14px;
+  }
+  .heroContent {
+    max-width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .homeBanner {
+    height: 60vh;
+    margin-bottom: 0;
+  }
+
+  .overlay {
+    padding: 1rem;
+  }
+
+  .heroInput {
+    width: 100%;
+    padding: 5px 3rem;
+  }
+
+  .support {
+    padding: 1rem;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  .supportCard {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .support {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .supportCard {
+    width: 100%;
+  }
+
+  .heroInput {
+    width: 100%;
+  }
+
+  .homeBanner {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .heroContent {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}

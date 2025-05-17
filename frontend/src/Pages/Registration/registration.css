@@ -1,0 +1,36 @@
+.registrationBox {
+  padding: 2rem;
+  background: #ecffec;
+  text-align: center;
+  height: 100%;
+}
+.registrationBox form {
+  padding: 1rem;
+  background: #1a711b40;
+}
+
+.registrationBox form input {
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+}
+
+.all_banner {
+  background-image: url("../../Images/banner.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.supportRegistration {
+  background-color: var(--color-blue);
+  padding: 2rem;
+}
+
+
+@media only screen and (max-width:768px) {
+  .all_banner{
+    height: 100%;
+  }
+}

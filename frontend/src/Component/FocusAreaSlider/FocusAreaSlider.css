@@ -1,0 +1,77 @@
+.focus-area-section {
+  background-color: #f1fff1;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.focus-area-tile {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  height: 200px;
+  justify-content: space-evenly;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.focus-area-tile img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.focus-area-tile p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.822);
+  font-weight: bold;
+  margin: 0;
+}
+
+.custom-prev-button,
+.custom-next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #45a049;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.custom-prev-button {
+  left: 10px;
+}
+
+.custom-next-button {
+  right: 10px;
+}
+
+.custom-prev-button:hover,
+.custom-next-button:hover {
+  background-color: #3b8b3b;
+}
+
+@media (max-width: 768px) {
+  .focus-area-tile{
+    min-height: 120px;
+    padding: 10px;
+  }
+  .focus-area-tile p{
+    font-size: 12px;
+  }
+  .custom-prev-button,
+  .custom-next-button {
+    font-size: 18px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,46 @@
+.admission{
+    background-color: #E9EDE7;
+    padding: 2rem 0rem;
+    margin-top: 2rem;
+}
+.apply_mentorship{
+    background-color: #BBEF9AA3;
+    padding: 2rem 0rem;
+}
+.prospectiveDetails{
+    padding: 2rem;
+    height: 100%;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.prospectiveDetails h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.faq{
+    padding: 2rem 0rem;
+    background-color: white;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--color-began);
+    color: white;
+}
+
+.accordion-body{
+    background-color: beige;
+}
+@media only screen and (max-width:768px) {
+    .prospectiveDetails{
+        padding: 1rem;
+    }
+    .student-content{
+    font-size: small;
+    text-align: start;
+    }   
+}

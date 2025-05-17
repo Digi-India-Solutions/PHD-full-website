@@ -1,0 +1,32 @@
+.studentCard {
+  padding: 1rem;
+  box-shadow: 6px 5px 32px -10px lightgray;
+background: #fff;
+}
+
+.guideSection {
+  background-color: var(--color-blue);
+}
+
+.guiderow{
+  align-items: center;
+}
+
+.guidecontentspacing{
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+  .guideContent{
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+  .studentCard {
+    padding: 0.5rem;
+  }
+
+  .guidecontentspacing{
+    margin-top: 0;
+  }
+  
+}
