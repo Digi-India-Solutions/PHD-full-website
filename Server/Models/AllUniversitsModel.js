@@ -7,7 +7,11 @@ const AllUniversitySchema = new mongoose.Schema({
         required: true
     },
     Universities: {
-        type: [String],
+        type: String,
+        required: true
+    },
+    Link:{
+        type: String,
         required: true
     }
 })

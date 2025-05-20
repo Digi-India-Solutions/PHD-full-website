@@ -3,7 +3,6 @@ const { createAllUniversity, getAllAllUniversities, getAllUniversityById, update
 const AllUniversityRouter = express.Router();
 
 
-
 AllUniversityRouter.post('/add-multi-universities', createAllUniversity);
 AllUniversityRouter.get('/all-multi-universities', getAllAllUniversities);
 AllUniversityRouter.get('/all-multi-universities-accordign-zone', getAllAllUniversitiesAccordingZone);

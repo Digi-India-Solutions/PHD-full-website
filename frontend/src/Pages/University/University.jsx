@@ -47,13 +47,20 @@ const University = () => {
       [zone]: !prevState[zone],
     }));
   };
+console.log("zones",zones);
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>University Search - Find Accredited Universities | IIRHE</title>
-        <meta name="description" content="Explore accredited universities and PhD programs across different zones in India. Find the best university that matches your professional aspirations." />
-        <meta name="keywords" content="university search, accredited universities, PhD programs, UGC approved universities, NAAC accredited universities, higher education" />
+        <meta
+          name="description"
+          content="Explore accredited universities and PhD programs across different zones in India. Find the best university that matches your professional aspirations."
+        />
+        <meta
+          name="keywords"
+          content="university search, accredited universities, PhD programs, UGC approved universities, NAAC accredited universities, higher education"
+        />
         <meta name="author" content="Your Company Name" />
       </Helmet>
       <section className="univercityMain">
@@ -84,21 +91,30 @@ const University = () => {
               <div className="col-md-6 mb-3" key={index}>
                 <div className="eastIndiaCard">
                   <h2 className="mb-4">{zone.UniversityZone}</h2>
-                  <ol>
-                    {zone.Universities.slice(
-                      0,
-                      showMore[zone.UniversityZone]
-                        ? zone.Universities.length
-                        : 5
-                    ).map((university, uniIndex) => (
-                      <li key={uniIndex}>{university}</li>
-                    ))}
-                  </ol>
+                 
+                  <p>
+  {new DOMParser()
+    .parseFromString(zone.Universities, "text/html")
+    .body.textContent}
+</p>
+                  {zone.Link && (
+                    <a
+                      href={zone.Link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="viewfulllist"
+                      style={{ margin: "0px 4px" }}
+                    >
+                      View Link
+                    </a>
+                  )}
                   <button
                     className="viewfulllist"
                     onClick={() => toggleVisibility(zone.UniversityZone)}
                   >
-                    {showMore[zone.UniversityZone] ? "Show Less" : "View Full List"}
+                    {showMore[zone.UniversityZone]
+                      ? "Show Less"
+                      : "View Full List"}
                   </button>
                 </div>
               </div>
