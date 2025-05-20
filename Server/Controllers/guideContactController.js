@@ -39,3 +39,20 @@ exports.getContacts = async (req, res) => {
         res.status(500).json({ message: "Server error, please try again later" });
     }
 };
+
+exports.deleteContact = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const contact = await GuideContact.findById(id);
+        if (!contact) {
+            return res.status(404).json({ message: "Contact not found" });
+        }
+
+        await contact.deleteOne();
+
+        res.status(200).json({ message: "Contact deleted successfully" });
+    } catch (error) {
+        console.error("Error deleting contact:", error);
+        res.status(500).json({ message: "Server error, please try again later" });
+    }
+};

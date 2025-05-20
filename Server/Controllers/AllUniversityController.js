@@ -4,7 +4,7 @@ const University = require("../Models/UniversityZone");
 
 // Create a new AllUniversity
 exports.createAllUniversity = async (req, res) => {
-    const { UniversityZone, Universities } = req.body;
+    const { UniversityZone, Universities,Link } = req.body;
 
     try {
         // Validate if the UniversityZone exists
@@ -15,7 +15,8 @@ exports.createAllUniversity = async (req, res) => {
 
         const newAllUniversity = new AllUniversity({
             UniversityZone,
-            Universities
+            Universities,
+            Link
         });
 
         const savedUniversity = await newAllUniversity.save();
@@ -46,6 +47,7 @@ exports.getAllAllUniversitiesAccordingZone = async (req, res) => {
         const combinedData = allUniversities.map((university) => ({
             UniversityZone: university.UniversityZone.UniversityZone,
             Universities: university.Universities,
+            Link:university.Link
         }));
 
         res.status(200).json({ success: true, data: combinedData });
@@ -75,7 +77,7 @@ exports.getAllUniversityById = async (req, res) => {
 // Update an existing AllUniversity
 exports.updateAllUniversity = async (req, res) => {
     const { id } = req.params;
-    const { UniversityZone, Universities } = req.body;
+    const { UniversityZone, Universities,Link } = req.body;
 
     try {
         // Validate if the UniversityZone exists
@@ -88,7 +90,7 @@ exports.updateAllUniversity = async (req, res) => {
 
         const updatedUniversity = await AllUniversity.findByIdAndUpdate(
             id,
-            { UniversityZone, Universities },
+            { UniversityZone, Universities,Link },
             { new: true }
         );
 

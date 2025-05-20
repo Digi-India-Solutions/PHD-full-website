@@ -39,7 +39,7 @@ const GuideRequest = () => {
         // If the user confirms, proceed with the deletion
         if (result.isConfirmed) {
             try {
-                const response = await axios.delete(`https://api.iirhe.org/api/delete-mentorship-request/${id}`);
+                const response = await axios.delete(`https://api.iirhe.org/api/delete-guide-contact/${id}`);
                 if (response.status === 200) {
                     // Filter out the deleted request from the state
                     setRequests(requests.filter(request => request._id !== id));

@@ -42,27 +42,31 @@ const getJoinGuides = async (req, res) => {
 
 // Delete a JoinGuide record by ID
 const deleteJoinGuide = async (req, res) => {
-    try {
-        const { id } = req.params;
-
-        // Check if the record exists
-        const joinGuide = await joinGuide.findById(id);
-        if (!joinGuide) {
-            return res.status(404).json({ success: false, message: "JoinGuide record not found." });
-        }
-
-        // Delete the record
-        await joinGuide.deleteOne();
-
-        res.status(200).json({
-            success: true,
-            message: "JoinGuide record deleted successfully.",
-        });
-    } catch (error) {
-        console.error("Error in deleteJoinGuide:", error);
-        res.status(500).json({ success: false, message: "Server error. Please try again later." });
+  try {
+    const { id } = req.params;
+    const existingJoinGuide = await joinGuide.findById(id);
+    if (!existingJoinGuide) {
+      return res.status(404).json({
+        success: false,
+        message: "JoinGuide record not found.",
+      });
     }
+
+    await existingJoinGuide.deleteOne();
+
+    res.status(200).json({
+      success: true,
+      message: "JoinGuide record deleted successfully.",
+    });
+  } catch (error) {
+    console.error("Error in deleteJoinGuide:", error);
+    res.status(500).json({
+      success: false,
+      message: "Server error. Please try again later.",
+    });
+  }
 };
+
 
 module.exports = {
     createJoinGuide,
