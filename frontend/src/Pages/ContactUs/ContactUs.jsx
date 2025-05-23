@@ -105,9 +105,9 @@ const ContactUs = () => {
                     {/* <p>lorem@ipsum.com</p> */}
                     <a
                       className="text-dark text-decoration-none"
-                      href="mailto:info@iirhe.org"
+                      href="mailto:iirhe.org@gmail.com"
                     >
-                      <i class="bi bi-envelope"></i> &nbsp; info@iirhe.org
+                      <i class="bi bi-envelope"></i> &nbsp; iirhe.org@gmail.com
                     </a>
                   </div>
                   <div className="information">

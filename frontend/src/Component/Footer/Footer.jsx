@@ -68,7 +68,7 @@ const Footer = () => {
                 <div className="col-md-12 col-6">
                   <p className="mb-0 text-white">Mail Us</p>
                   <button className="btn-custom">
-                    <a className="text-white text-decoration-none" href="mailto:info@iirhe.org">iirhe.org@gmail.com</a></button>
+                    <a className="text-white text-decoration-none" href="mailto:iirhe.org@gmail.com">iirhe.org@gmail.coml.com</a></button>
                 </div>
               </div>
             </div>
