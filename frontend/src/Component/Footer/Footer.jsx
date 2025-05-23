@@ -62,7 +62,7 @@ const Footer = () => {
                 <div className="col-md-12 mb-3 col-6">
                   <p className="mb-0 text-white">Contact Us</p>
                   <button className="btn-custom-light">
-                    <a class="text-decoration-none" href="tel:+918860247763">+91 999-031-6499</a>
+                    <a class="text-decoration-none" href="tel:+9191 999-031-6499">+91 999-031-6499</a>
                   </button>
                 </div>
                 <div className="col-md-12 col-6">

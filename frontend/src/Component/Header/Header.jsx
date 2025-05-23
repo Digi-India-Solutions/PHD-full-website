@@ -61,7 +61,7 @@ const Header = () => {
           <div className="contact-info">
             <div className="single-info">
               <i className="bi bi-telephone-outbound"></i>
-              <a href="tel:+918130543714">+91-8860426125</a>
+              <a href="tel:+918130543714">+91-9990316499</a>
             </div>
             <div className="single-info">
               <i className="bi bi-envelope"></i>

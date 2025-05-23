@@ -115,10 +115,10 @@ const ContactUs = () => {
                     {/* <p>123-456-789</p> */}
                     <a
                       className="text-dark text-decoration-none"
-                      href="tel:+918860247763"
+                      href="tel:+9191 999-031-6499"
                     >
                       <i class="bi bi-telephone-outbound"></i> &nbsp; +91
-                      886-024-7763
+                      999-031-6499
                     </a>
                   </div>
                 </div>
